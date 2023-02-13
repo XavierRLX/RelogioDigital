@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/relogio-digital.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Relogio Digital</title>
+</head>
+<body onload="HoraData()">
+
+    <div class="flex">
+        <div id="FundoGeral">
+            <div id="fundoum">
+                <div class="fontNum" id="DiadaSemana">
+                    <span id="diaSemanaId">DiadaSemana</span>,
+                    <span id="diaNumeroId">00</span> de
+                    <span id="mesId">mes</span> de
+                    <span id="anoId">Ano</span>.
+                  </div>
+        
+                  <div class="fontNum" id="relogioGrande">
+                    <span id="horaId">00</span> :
+                    <span id="minutosId">00</span> :
+                    <span id="segundosId">00</span>
+                  </div>
+                  <div class="tempoMarca">
+                    <p id="MarcaH">Hora</p>
+                    <p d="MarcaM">Minuto</p>
+                    <p id="MarcaS">Segundo</p>
+                  </div>
+                  <div id="temperatura">
+                    <h1 class="city"> Carregando... </h1>
+                    <h2>🌡<span id="temp"></span>°C 💧<span id='umidad'></span>%</h2>
+                </div>
+                <div>
+                    <img id="imagemCrono" class="icons" src="/Imagens/cronometro.png">
+                </div>
+            </div>
+            <div id="Fundo-dois">
+                <div id="relogio" class="hora"><p class="fontNum" id="hora"> -- : -- : -- </p></div>
+        
+                <header>
+                    <h1 class="fontNum" id="tempoCronometro"> 00 : 00 : 00</h1>
+                </header>
+                <div id="tempoTemporizador">
+                    <h1 id="contadoresTemp">
+                        <span id="contador-dia">00</span> :
+                        <span id="contador-hor">00</span> :
+                        <span id="contador-min">00</span> :
+                        <span id="contador-seg">00</span>
+                    </h1>
+                </div>
+        
+                <div class="opcoes">
+                    <h2 id="cronometro" class="tipo"> Cronômetro </h2>
+                    <h2 id="temporizador" class="tipo"> Temporizador </h2>
+                </div>
+        
+                <nav class="controles">
+                    <div id="visorCronometro">
+                        <input class="botoes" onclick="iniciarCronos()" type="button" value="&#9654">
+                        <input class="botoes" onclick="pausarCronos()"  type="button" value="II">
+                        <input class="botoes" onclick="zerarCronos()"   type="button" value="Zerar">
+                    </div>
+                    <div id="app" class="app">
+                        <div class="content-form">
+                            <form>
+                                <input class="botoes" type="datetime-local" id="input_dt" placeholder="Data de destino" />
+                                <button type="submit" class="botoes"> &#9654 </button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div>
+                    <img id="imagemRelogio" class="icons" src="/Imagens/simbolo-de-ferramentas-de-organizacao-e-administracao-de-horario-de-calendario-e-relogio.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Regressivo</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<script src="Relogio.js"></script>
+<script src="/JS/Cronos.js"></script>
+<script src="/JS/Inline.js"></script>
+<script src="/JS/PrevisaoTempo.js"></script>
+<script src="/JS/Temporizador.js"></script>
+</html>

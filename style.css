@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    animation: .10 normal;
+}
+body{
+    background-color: #000000;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+#DiadaSemana{
+    margin-bottom: 50px;
+}
+#FundoGeral{
+    color: #ffffff;
+    margin-top: 100px;
+    width: 800px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(4, 38, 231, 0.63);
+    background-color: #292626c4; 
+}
+#imagemCrono {
+    margin-top: 40px;
+}
+#imagemRelogio {
+    margin-top: 55px;
+}
+header{
+    text-align: center;
+    font-size: 4em;
+    color:#ffffff ;
+    margin: 50px;
+}
+#relogioGrande{
+    text-align: center;
+    font-size: 8em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.tempoMarca{
+    display: flex;
+    justify-content: space-around;
+    margin: -50px 0px 10px 0px;
+    font-size: .8em;
+}
+#MarcaH{
+    margin: 0px 0px 0px 30px;
+}
+
+
+.opcoes{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.tempo{
+    text-align: center;
+}
+#Fundo-dois{
+    display: none;
+}
+.tipo{
+    margin: 0px 50px 0px 50px;
+    padding: 5px;
+    animation: .2;
+}
+#calendario {
+    display: none;
+}
+#calendarioData {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+#cronometro, #temporizador {
+    border-radius: 5px;
+    cursor: pointer;
+}
+#tempoTemporizador{
+    font-size: 3.5em;
+    text-align: center;
+    display: none;
+}
+#app{
+    display: none;
+}
+#visorCronometro, #visorTemporizador {
+    display: none;
+}
+#temperatura{
+    text-align: center;
+}
+.icons{
+    cursor: pointer;
+}
+
+.controles{
+    margin: auto;
+    text-align: center;
+}
+.botoes{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+.adicionar{
+    margin: 20px 0px 20px 0px;
+}
+.locais{
+max-width: 700px;
+margin: auto;
+color: #ffffff;
+}
+.local{
+box-shadow: 0px 0px 20px black;
+background-color: #000000;
+height: 50px;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px;
+}
+
+@media(max-width: 1200px) {
+    #FundoGeral{
+        max-width: 350px;
+        max-height: 300px;
+    }
+    header{
+        margin: 30px;
+    }
+    #relogioGrande {
+        font-size: 4em;
+    }
+    #tempoCronometro{
+        font-size: .7em;
+    }
+    #temperatura{
+        font-size: .6em;
+    }
+    #imagemCrono {
+        width: 40px;
+        margin-top: 10px;
+    }
+    #cronometro, #temporizador {
+        font-size: 1em;
+        
+    }
+    #tempoTemporizador{
+        font-size: 1.3em;
+    }
+    .opcoes {
+        margin-top:-30px;
+        width: 350px;
+    }
+    #visorCronometro {
+        display: inline;
+    }
+    #contadoresTemp{
+        margin-bottom: 80px;
+    }
+    #input_dt{
+        width: 130px;
+        margin-bottom: 0px;
+    }
+    .botoes {
+        width: 40px;
+        height: 30px;
+        font-size: .8em;
+    }
+    #MarcaH{
+        margin: 0px 0px 0px 0px;
+    }
+}
