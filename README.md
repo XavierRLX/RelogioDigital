@@ -1,2 +1,3 @@
 # RelogioDigital
  
+theme: dark
