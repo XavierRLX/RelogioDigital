@@ -105,6 +105,7 @@ header{
 }
 #temperatura{
     text-align: center;
+    margin-top: 9px;
 }
 .icons{
     cursor: pointer;
