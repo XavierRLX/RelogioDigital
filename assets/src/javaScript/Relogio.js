@@ -20,13 +20,13 @@ return n;
 }
 // Cumprimento automático
 if (hr >= 6 && hr < 12 ) {
-    cumprimento.innerHTML = "Bom dia" 
+    cumprimento.innerHTML = "Bom dia !" 
     cumprimento.style.letterSpacing = "0"
 } else if ( hr >= 12 && hr < 18 ) {
-    cumprimento.innerHTML = "Boa tarde"
+    cumprimento.innerHTML = "Boa tarde !"
     cumprimento.style.letterSpacing = "0"
 } else {
-    cumprimento.innerHTML = "Boa noite"
+    cumprimento.innerHTML = "Boa noite !"
     cumprimento.style.letterSpacing = "0"
 }
 
