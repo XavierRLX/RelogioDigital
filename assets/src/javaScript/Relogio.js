@@ -5,6 +5,8 @@ let data = new Date();
 let hr = data.getHours();
 let min = data.getMinutes();
 let s = data.getSeconds();
+
+let cumprimento = document.getElementById("cumprimentoTexto") 
        //Juntando todas a variaveis em uma
 let tempo_real = 
 hr.pad(2) + ":" + min.pad(2) + ":" + s.pad(2);
@@ -16,6 +18,15 @@ Number.prototype.pad = function(digito){
 for(var n = this.toString(); n.length < digito; n = 0 + n);
 return n;
 }
+// Cumprimento automático
+if (hr >= 6 && hr < 12 ) {
+    cumprimento.innerHTML = "Bom dia" 
+} else if ( hr >= 12 && hr < 18 ) {
+    cumprimento.innerHTML = "Boa tarde"
+} else {
+    cumprimento.innerHTML = "Boa noite"
+}
+
 }
 setInterval(relogio,1000) //1000 > 1 segundo
 

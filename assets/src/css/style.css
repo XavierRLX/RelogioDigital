@@ -19,6 +19,11 @@ body{
 #DiadaSemana{
     margin-bottom: 50px;
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
 #FundoGeral{
     color: #ffffff;
     margin-top: 100px;

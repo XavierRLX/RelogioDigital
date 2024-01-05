@@ -26,8 +26,9 @@ function getUserPosition() {
       humidity.innerHTML    = data.main.humidity
     })
     .catch((err) => {
-      city.innerText = `Rio de Janeiro`;
+      city.innerText = `Não encontrado...`;
       temperature.innerHTML = `-`;
+      humidity.innerHTML = `-`;
     })
   }
   
