@@ -8,25 +8,37 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     animation: .10 normal;
 }
-body{
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     background-color: #000000;
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
+
+.centralized-div {
+    width: 300px; /* ajuste conforme necessário */
+    height: 200px; /* ajuste conforme necessário */
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 #DiadaSemana{
     margin-bottom: 50px;
 }
-.footer{
+.dsc{
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
 }
+#cumprimentoTexto {
+    letter-spacing: 5px;
+}
 #FundoGeral{
     color: #ffffff;
-    margin-top: 100px;
     width: 800px;
     height: 450px;
     padding: 20px;
